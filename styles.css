@@ -1,0 +1,63 @@
+* {
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  background-color: hsl(225, 100%, 94%);
+  color: hsl(223, 47%, 23%);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  max-width: 300px;
+}
+
+.plan {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: hsl(225, 100%, 98%);
+}
+
+button {
+  border: none;
+  margin-top: 1rem;
+  padding: 14px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  width: 100%;
+  box-shadow:1px 5px 18px hsl(218, 22%, 67%);
+  cursor: pointer;
+}
+
+.payment {
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+}
+
+.cancel {
+  background-color: white;
+  color: hsl(223, 47%, 23%);
+}
+
+.attribution { 
+  font-size: 11px; text-align: center; 
+}
+.attribution a { 
+  color: hsl(228, 45%, 44%);
+}
