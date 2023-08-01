@@ -8,6 +8,7 @@ html, body {
   padding: 0;
   font-size: 15px;
   background-color: hsl(225, 100%, 94%);
+  background-image: url("./assets/pattern-background-desktop.svg");
   color: hsl(223, 47%, 23%);
 }
 
@@ -23,32 +24,76 @@ html, body {
   flex-direction: column;
   background-color: white;
   max-width: 300px;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  border-radius: 20px;
+}
+
+#hero {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+#icon {
+  height: 50px;
+}
+
+.summary {
+text-align: center;
+  padding: 1rem;
 }
 
 .plan {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
   background-color: hsl(225, 100%, 98%);
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 20px;
+}
+
+.annual {
+  margin: 0;
+}
+
+h4 {
+  margin: 0;
+}
+
+.btn-group {
+  display: flex-wrap;
+  flex-direction: row;
+  margin-left: .5rem;
 }
 
 button {
   border: none;
-  margin-top: 1rem;
-  padding: 14px 40px;
+  margin: 1rem;
+  padding: 14px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   border-radius: 5px;
-  width: 100%;
-  box-shadow:1px 5px 18px hsl(218, 22%, 67%);
+  width: 250px;
+  transition-duration: 0.4s;
   cursor: pointer;
 }
+
 
 .payment {
   background-color: hsl(245, 75%, 52%);
   color: white;
 }
+
+.payment:hover {
+  background-color: hsl(225, 100%, 94%);
+  color: hsl(223, 47%, 23%);
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  cursor: pointer;
+}
+
 
 .cancel {
   background-color: white;
@@ -61,3 +106,9 @@ button {
 .attribution a { 
   color: hsl(228, 45%, 44%);
 }
+
+/* @media only screen and (max-width: 600px) {
+  body {
+    background-color: hsl(225, 100%, 94%);
+  }
+} */
